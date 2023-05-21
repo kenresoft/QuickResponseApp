@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".purchase.PurchasesAdapter">
+
+    <data>
+
+        <variable
+            name="presenter"
+            type="com.kixfobby.security.quickresponse.purchase.PurchaseItemVM" />
+
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        app:cardBackgroundColor="@color/colorPrimary"
+        app:cardCornerRadius="10.0dip"
+        app:cardElevation="3.0dip"
+        app:cardPreventCornerOverlap="true"
+        app:strokeColor="@color/white"
+        app:strokeWidth="1dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_list_item"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="15dp">
+
+            <ImageView
+                android:id="@+id/iv_product_item"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:contentDescription="@string/one_apple"
+                app:purchaseItemSrcCompat="@{presenter.skuProductName}"
+                app:tint="@color/white"
+                tools:src="@drawable/baseline_payment_24" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="@dimen/size10"
+                android:layout_marginEnd="@dimen/size0"
+                android:layout_toEndOf="@id/iv_product_item"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tv_product_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="sans-serif-condensed-medium"
+                    android:text="@{presenter.skuProductName}"
+                    android:textSize="@dimen/text16"
+                    android:textStyle="bold"
+                    tools:text="@string/one_apple" />
+
+                <Space
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/size5" />
+
+                <TextView
+                    android:id="@+id/tv_product_state"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="start"
+                    android:fontFamily="sans-serif-condensed"
+                    android:text="@{presenter.skuProductState, default=@plurals/qty}"
+                    android:textSize="@dimen/text18"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+</layout>

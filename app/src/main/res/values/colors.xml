@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryLight">#81DED5 </color>  <!--#26A69A  -OLD COLOR  -->
+    <color name="colorPrimaryNormal">#00ACC1</color>
+    <color name="colorAccentDark">#9CCC65</color>
+    <color name="colorAccent">#D81B60</color>
+
+    <color name="textColorPrimary">#CCF3AF62</color>
+    <color name="textColorSecondary">#FE1A2E6E</color>
+
+    <color name="icons">#26A69A</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="icActive">#FFFFFFFF</color>
+    <color name="icFocused">#DDFFFFFF</color>
+    <color name="icPressed">#AAFFFFFF</color>
+
+    <color name="colorControlNormal">#D5E1B11F</color>
+    <color name="colorControlActivated">@color/colorAccent</color>
+    <color name="colorControlHighlight">@color/divider</color>
+
+    <color name="navigationBarColor">@color/colorPrimaryDark</color>
+
+    <color name="colorBackground">#E3DFEA</color>
+    <color name="windowBackground">#C0C3C6</color>
+    <color name="darkBackground">#424242</color>
+
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
+
+    <!-- Background colors for the intro screen-->
+
+    <!--  Darker colors for the dots-->
+
+    <!-- Light colors of the dots-->
+
+    <color name="grey_3">#f7f7f7</color>
+    <color name="grey_10">#e6e6e6</color>
+    <color name="grey_20">#cccccc</color>
+    <color name="grey_40">#999999</color>
+    <color name="grey_60">#666666</color>
+    <color name="grey_80">#37474F</color>
+    <color name="grey_90">#263238</color>
+
+    <color name="overlay_dark_20">#33000000</color>
+    <color name="overlay_dark_30">#4D000000</color>
+    <color name="overlay_dark_40">#66000000</color>
+
+    <color name="overlay_light_20">#33FFFFFF</color>
+
+    <color name="red_600">#E53935</color>
+    <color name="red_900">#B71C1C</color>
+
+</resources>

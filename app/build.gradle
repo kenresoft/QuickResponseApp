@@ -1,0 +1,182 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+apply plugin: 'kotlin-android'
+apply plugin: 'kotlin-kapt'
+apply plugin: 'dagger.hilt.android.plugin'
+//apply plugin: 'kotlin-android-extensions'
+
+android {
+    signingConfigs {
+        release {
+            storeFile file('C:\\Users\\user\\AndroidStudioProjects\\KIXFOBBY\\Keystore\\kixf-keystore.jks')
+            keyAlias 'kixfobbyandroidkey'
+            storePassword 'kixfobby2jesus'
+            keyPassword 'kixfobby2jesus'
+        }
+        debug {
+            storeFile file('C:\\Users\\user\\AndroidStudioProjects\\KIXFOBBY\\Keystore\\kixf-keystore.jks')
+            storePassword 'kixfobby2jesus'
+            keyAlias 'kixfobbyandroidkey'
+            keyPassword 'kixfobby2jesus'
+        }
+    }
+
+    compileSdkVersion 33
+
+    defaultConfig {
+        applicationId "com.kixfobby.security.quickresponse"
+        minSdkVersion 24
+        targetSdkVersion 33
+        versionCode 25
+        versionName "1.0.1"
+        multiDexEnabled false
+        vectorDrawables.useSupportLibrary = true
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments += [
+                        "room.schemaLocation"  : "$projectDir/schemas".toString(),
+                        "room.incremental"     : "true",
+                        "room.expandProjection": "true"]
+            }
+        }
+        //signingConfig signingConfigs.release
+    }
+    sourceSets {
+        androidTest.assets.srcDirs += files("$projectDir/schemas".toString())
+    }
+
+    buildTypes {
+        release {
+            shrinkResources true
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    buildFeatures {
+        dataBinding true
+        viewBinding true
+    }
+
+    compileOptions {
+        sourceCompatibility "11"
+        targetCompatibility "11"
+    }
+    lint {
+        abortOnError false
+        baseline file('lint-baseline.xml')
+        checkReleaseBuilds true
+        enable 'Interoperability'
+        warningsAsErrors false
+    }
+    namespace 'com.kixfobby.security.quickresponse'
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.6.4"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:1.6.4"
+
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.core:core-ktx:1.9.0'
+    implementation 'androidx.vectordrawable:vectordrawable-animated:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.preference:preference-ktx:1.2.0'
+    implementation 'androidx.camera:camera-view:1.2.0-alpha01'
+
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:2.4.1"
+    implementation "androidx.lifecycle:lifecycle-runtime-ktx:2.4.1"
+
+    implementation 'androidx.room:room-runtime:2.4.2'
+    implementation "androidx.room:room-ktx:2.4.2"
+
+    implementation 'androidx.work:work-runtime:2.7.1'
+    implementation "androidx.startup:startup-runtime:1.1.1"
+
+    implementation 'com.github.kittinunf.fuel:fuel:2.3.1'
+    implementation 'com.github.kittinunf.fuel:fuel-android:2.3.1'
+    implementation 'com.balysv:material-ripple:1.0.2'
+    implementation 'com.github.JB-Dev:progress-bar:1.0'
+    implementation 'com.github.duanhong169:camera:1.0.3'
+    implementation 'com.github.duanhong169:picker-view:1.0.0'
+    implementation 'com.github.duanhong169:text-button:1.0.5'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    implementation 'com.readystatesoftware.sqliteasset:sqliteassethelper:2.0.1'
+    implementation 'com.jakewharton:butterknife:10.2.3'
+    implementation 'de.hdodenhof:circleimageview:3.1.0'
+    implementation 'com.daimajia.easing:library:2.4@aar'
+    implementation 'com.daimajia.androidanimations:library:2.4@aar'
+    implementation 'com.zsoltsafrany:needle:1.0.0'
+    implementation 'com.github.tapadoo:alerter:7.1.0'
+    implementation "com.github.skydoves:powermenu:2.2.0"
+    implementation "com.mlsdev.animatedrv:library:2.0.0"
+    implementation 'com.scwang.wave:MultiWaveHeader:1.0.0-andx'
+
+    implementation 'com.google.android.gms:play-services-location:21.0.1'
+    implementation 'com.google.android.gms:play-services-maps:18.0.2'
+    implementation 'com.google.android.gms:play-services-ads:20.6.0'
+    implementation "com.google.dagger:hilt-android:2.40.1"
+    implementation 'com.google.firebase:firebase-analytics:21.0.0'
+    implementation 'com.google.firebase:firebase-auth:21.0.4'
+    implementation 'com.google.firebase:firebase-config:21.1.0'
+    implementation 'com.google.firebase:firebase-iid:21.1.0'
+    implementation 'com.google.firebase:firebase-core:21.0.0'
+    implementation 'com.google.firebase:firebase-messaging:23.0.5'
+    implementation 'com.google.firebase:firebase-database:20.0.5'
+    implementation 'com.google.firebase:firebase-storage-ktx:20.0.1'
+    implementation 'com.google.firebase:firebase-auth-ktx:21.0.4'
+    implementation 'com.google.firebase:firebase-firestore:24.1.2'
+    implementation 'com.firebaseui:firebase-ui-database:8.0.0'
+    implementation 'com.google.code.gson:gson:2.9.0'
+    implementation 'com.android.billingclient:billing:5.0.0'
+
+    implementation project(path: ':localization')
+    implementation project(path: ':permission')
+    implementation project(path: ':spacetablayout')
+    implementation project(path: ':badge')
+    implementation project(path: ':hiddencamera')
+    implementation project(path: ':crash')
+    implementation project(path: ':floaty')
+
+    //annotationProcessor  ---> kapt
+    kapt 'androidx.lifecycle:lifecycle-common-java8:2.5.1'
+    kapt 'androidx.room:room-compiler:2.4.2'
+    kapt "com.google.dagger:hilt-android-compiler:2.40.1"
+    kapt 'com.github.bumptech.glide:compiler:4.12.0'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:10.2.3'
+
+
+    testImplementation 'androidx.arch.core:core-testing:2.1.0'
+    testImplementation 'androidx.room:room-testing:2.4.2'
+    testImplementation 'org.robolectric:robolectric:4.7.1'
+    testImplementation 'com.google.truth:truth:1.1.3'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation "com.google.dagger:hilt-android-testing:2.40.1"
+
+    androidTestImplementation 'androidx.test:core:1.4.0'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
+    androidTestImplementation 'androidx.test.ext:truth:1.5.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-contrib:3.5.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-intents:3.5.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-accessibility:3.5.1'
+    androidTestImplementation 'androidx.test.espresso:espresso-web:3.5.1'
+    androidTestImplementation 'androidx.test.espresso.idling:idling-concurrent:3.4.0'
+    androidTestImplementation 'androidx.test.espresso:espresso-idling-resource:3.5.1'
+    androidTestImplementation 'androidx.test:runner:1.4.0'
+    androidTestImplementation 'androidx.test:rules:1.4.0'
+    androidTestImplementation 'androidx.test.uiautomator:uiautomator:2.2.0'
+    androidTestImplementation 'org.mockito:mockito-android:4.1.0'
+    androidTestImplementation "com.google.dagger:hilt-android-testing:2.40.1"
+
+    testAnnotationProcessor "com.google.dagger:hilt-android-compiler:2.40.1"
+
+    androidTestAnnotationProcessor "com.google.dagger:hilt-android-compiler:2.40.1"
+
+}

@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentEnd="true"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lyt_media"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_media"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_small"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:layout_marginRight="@dimen/spacing_small"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    android:clickable="true"
+                    android:contentDescription="@string/media"
+                    android:focusable="true"
+                    android:tooltipText="Attach Media File"
+                    app:backgroundTint="@color/colorControlNormal"
+                    app:borderWidth="2dp"
+                    app:elevation="15dp"
+                    app:fabCustomSize="36dp"
+                    app:rippleColor="@android:color/white"
+                    app:srcCompat="@drawable/baseline_perm_media_24"
+                    app:tint="@color/grey_80"
+                    tools:targetApi="o" />
+
+                <View
+                    android:layout_width="@dimen/spacing_xmedium"
+                    android:layout_height="0.0dip" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/lyt_fire"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_fire"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_small"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:layout_marginRight="@dimen/spacing_small"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    android:clickable="true"
+                    android:contentDescription="@string/fire_alert"
+                    android:focusable="true"
+                    android:tint="@color/grey_80"
+                    android:tooltipText="@string/fire_alert"
+                    app:backgroundTint="@color/colorPrimaryLight"
+                    app:fabCustomSize="36dp"
+                    app:rippleColor="@android:color/black"
+                    app:srcCompat="@drawable/baseline_local_fire_department_24"
+                    tools:targetApi="o" />
+
+                <View
+                    android:layout_width="@dimen/spacing_xmedium"
+                    android:layout_height="0.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyt_nearby"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_nearby"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_small"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:layout_marginRight="@dimen/spacing_small"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    android:clickable="true"
+                    android:contentDescription="@string/account"
+                    android:focusable="true"
+                    android:tint="@color/grey_80"
+                    android:tooltipText="@string/nearby_alert"
+                    app:backgroundTint="@color/colorPrimaryLight"
+                    app:fabCustomSize="36dp"
+                    app:rippleColor="@android:color/black"
+                    app:srcCompat="@drawable/baseline_location_on_24"
+                    tools:targetApi="o" />
+
+                <View
+                    android:layout_width="@dimen/spacing_xmedium"
+                    android:layout_height="0.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyt_travel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_travel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_small"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:layout_marginRight="@dimen/spacing_small"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    android:clickable="true"
+                    android:contentDescription="@string/account"
+                    android:focusable="true"
+                    android:tint="@color/grey_80"
+                    android:tooltipText="@string/nearby_alert"
+                    app:backgroundTint="@color/colorPrimaryLight"
+                    app:fabCustomSize="36dp"
+                    app:rippleColor="@android:color/black"
+                    app:srcCompat="@drawable/ic_baseline_emoji_transportation_24"
+                    tools:targetApi="o" />
+
+                <View
+                    android:layout_width="@dimen/spacing_xmedium"
+                    android:layout_height="0.0dip" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:gravity="end"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/lyt_dashboard"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/dash"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center"
+                    android:layout_margin="@dimen/spacing_middle"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="3.0dip"
+                    app:cardElevation="2.0dip"
+                    app:contentPadding="@dimen/spacing_medium">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:text="@string/dashboard"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_dashboard"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_small"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:layout_marginRight="@dimen/spacing_small"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    android:clickable="true"
+                    android:contentDescription="@string/dashboard"
+                    android:focusable="true"
+                    android:tint="@color/grey_40"
+                    android:tooltipText="@string/dashboard"
+                    app:cardBackgroundColor="@color/design_default_color_secondary"
+                    app:fabCustomSize="@dimen/spacing_xlarge"
+                    app:rippleColor="@android:color/black"
+                    app:srcCompat="@drawable/ic_dashboard_black_24dp"
+                    tools:targetApi="o" />
+
+                <View
+                    android:layout_width="@dimen/spacing_xmedium"
+                    android:layout_height="0.0dip" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/lyt_account"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/acct"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|center"
+                    android:layout_margin="@dimen/spacing_middle"
+                    app:cardBackgroundColor="@color/white"
+                    app:cardCornerRadius="3.0dip"
+                    app:cardElevation="2.0dip"
+                    app:contentPadding="@dimen/spacing_medium">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="fill_parent"
+                        android:layout_gravity="center"
+                        android:fontFamily="sans-serif-light"
+                        android:gravity="center"
+                        android:text="@string/account"
+                        android:textAppearance="@style/TextAppearance.AppCompat.Display1"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="16sp"
+                        android:textStyle="bold" />
+                </androidx.cardview.widget.CardView>
+
+                <com.google.android.material.floatingactionbutton.FloatingActionButton
+                    android:id="@+id/fab_account"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/spacing_small"
+                    android:layout_marginTop="@dimen/spacing_small"
+                    android:layout_marginRight="@dimen/spacing_small"
+                    android:layout_marginBottom="@dimen/spacing_small"
+                    android:clickable="true"
+                    android:contentDescription="@string/account"
+                    android:focusable="true"
+                    android:tint="@color/grey_40"
+                    android:tooltipText="@string/manage_account"
+                    app:cardBackgroundColor="@color/design_default_color_secondary"
+                    app:fabCustomSize="@dimen/spacing_xlarge"
+                    app:rippleColor="@android:color/black"
+                    app:srcCompat="@drawable/ic_person"
+                    tools:targetApi="o" />
+
+                <View
+                    android:layout_width="@dimen/spacing_xmedium"
+                    android:layout_height="0.0dip" />
+            </LinearLayout>
+
+            <com.google.android.material.floatingactionbutton.FloatingActionButton
+                android:id="@+id/fab_home"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/spacing_small"
+                android:layout_marginTop="@dimen/spacing_small"
+                android:layout_marginEnd="@dimen/spacing_xmedium"
+                android:layout_marginBottom="@dimen/spacing_small"
+                android:clickable="true"
+                android:contentDescription="@string/app_name"
+                android:focusable="true"
+                android:tint="@android:color/white"
+                app:backgroundTint="@color/colorPrimary"
+                app:fabCustomSize="@dimen/spacing_xxlarge"
+                app:rippleColor="@android:color/white"
+                app:srcCompat="@drawable/ic_baseline_menu_open_24" />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</layout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="user_authentication">User Authentication</string>
+    <string name="manage_account">Manage Account</string>
+    <string name="user_info">User Info</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="security_contacts">Security Contacts</string>
+    <string name="self_alert">Self Alert</string>
+    <string name="nearby_alert">Nearby Alert</string>
+    <string name="fire_alert">Fire Alert</string>
+    <string name="profile_info">Profile Info</string>
+    <string name="log_out">Log Out</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="set_security">Set security</string>
+    <string name="set_security_summary">Enable security to lock app on startup</string>
+    <string name="change_language_summary">Select your preferred language for the app.</string>
+    <string name="sms_message">SMS message</string>
+    <string name="sms_message_summary">Set SMS message</string>
+    <string name="current_location_sharing">Current location sharing</string>
+    <string name="current_location_sharing_summary">Disable sharing current location in SMS</string>
+    <string name="custom_location">Custom location</string>
+    <string name="custom_location_summary">Save location to share if current location is unavailable</string>
+    <string name="security_tips" tools:ignore="TypographyEllipsis">Security tips...</string>
+    <string name="delete">\"Delete \"</string>
+    <string name="user_profile_info">User Profile Info</string>
+    <string name="user_account_deleted">User account deleted.</string>
+    <string name="email_sent">Email sent.</string>
+    <string name="welcome_to_quick_response">Welcome to Quick Response</string>
+    <string name="sign_in_to_continue">Sign In to continue</string>
+    <string name="sign_up_for_an_account">SIGN UP FOR AN ACCOUNT?</string>
+    <string name="sign_up_to_continue">Sign Up to continue</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="already_have_an_account_sign_in">ALREADY HAVE AN ACCOUNT? SIGN IN</string>
+    <string name="no_internet">No internet !</string>
+    <string name="connect_to_internet_to_get_latest_location_updates">Connect to internet to get latest location updates</string>
+    <string name="app_privacy_policy">App\'s Privacy Policy</string>
+    <string name="app_term_condition"><![CDATA[App\'s Terms & Conditions]]></string>
+    <string name="okay">Okay</string>
+    <string name="accept">Accept</string>
+
+
+</resources>

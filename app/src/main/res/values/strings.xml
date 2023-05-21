@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name" translatable="false">Quick Response</string>
+    <string name="app_owner" translatable="false">Sharp Response</string>
+    <string name="description">Optimum Security for your Safety</string>
+    <string name="app_update_default_description">Looks like you have an older\nversion of the app.\nPlease update to get latest\nfeatures and best experience.</string>
+    <string name="app_update_positive_text">UPDATE NOW</string>
+    <!--string name="action_about">About</string>
+    <string name="action_account">Account</string>
+    <string name="action_profile_info">Profile Info</string>
+    <string name="action_signout">Sign out</string>
+    <string name="action_help">Help</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_share">Share App</string>
+
+    <string name="about_contact_us">Contact us</string>
+    <string name="about_instagram">Follow us on Instagram</string>
+    <string name="about_facebook">Like us on Facebook</string>
+    <string name="about_play_store">Rate us on the Play Store</string>
+    <string name="about_twitter">Follow us on Twitter</string-->
+
+    <string name="submit">Submit </string>
+    <string name="background_image">Background Image</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="state">State</string>
+    <string name="zip_code">Local Government Area or Zip Code</string>
+    <string name="local_government">Local Government Area</string>
+
+    <string name="sign_in">Sign In</string>
+    <string name="loading">Loading…</string>
+    <string name="signed_out">Signed Out</string>
+
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_name">Name</string>
+
+    <string name="logout">Logout?</string>
+    <string name="title_profile">User\'s profile</string>
+    <string name="title_update_email">Update user\'s email</string>
+    <string name="title_update_password">Update user\'s password</string>
+    <string name="title_send_password_reset">Send password reset</string>
+
+    <string name="account">Account</string>
+    <string name="help">Help</string>
+    <string name="settings">Settings</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Dashboard</string>
+    <string name="title_account">Account</string>
+
+    <!-- Notification Strings -->
+
+    <!-- Button Strings -->
+    <string name="button_close">Close</string>
+
+    <!-- Main Preferences -->
+    <!--string name="pref_config_title">SMS Popup Configuration</string>
+    <string name="pref_other_title">Other</string>
+    <string name="pref_enabled_title">Enable SMS Popup</string>
+    <string name="pref_enabled_summaryon">SMS Popup is enabled</string>
+    <string name="pref_enabled_summaryoff">SMS Popup is disabled</string>
+    <string name="pref_about_title">About</string>
+    <string name="pref_about_summary">About SMS Popup</string>
+    <string name="pref_about_text" translatable="false">Created by: Adam K\nGoogle+: http://gplus.to/smspopup\nBlog: http://www.everythingandroid.net\n\nSMS Popup provides a convenient popup dialog when a message is received that allows you to quickly read and reply to messages.  It also provides in-depth customization of message notifications including contact specific sound, vibrate and LED settings.\n\nFeel free to email me any comments, suggestions or bugs.\n\nCredits to Min Tran for the app icon.\n(http://min.frexy.com)\n</string>
+    <string name="pref_faq_title">FAQ</string>
+    <string name="pref_faq_summary">Frequently Asked Questions</string>
+    <string name="pref_faq_url" translatable="false">http://code.google.com/p/android-smspopup/wiki/FAQ</string>
+    <string name="pref_sendemail_title">E-mail the Developer</string>
+    <string name="pref_sendemail_dialog">Can I include your system information in the e-mail (this will help me troubleshoot bugs easier)?</string>
+    <string name="pref_sendemail_buttonok">Sure</string>
+    <string name="pref_sendemail_buttoncancel">No way</string-->
+
+    <!-- Additional Preferences -->
+    <!--string name="pref_additional_title">Additional Settings</string>
+    <string name="pref_additional_summary">Additional SMS Popup configuration</string>
+    <string name="pref_timeout_title">Screen Timeout</string>
+    <string name="pref_timeout_summary">The screen will sleep after this time</string>
+    <string name="pref_dimscreen_title">Dim Popup Screen</string>
+    <string name="pref_dimscreen_summaryon">Popup screen will be dim (saves battery)</string>
+    <string name="pref_dimscreen_summaryoff">Popup screen will be bright</string>
+    <string name="pref_privacy_category">Privacy</string>
+    <string name="pref_privacy_title">Privacy Mode</string>
+    <string name="pref_privacy_summaryon">Popup will use privacy mode </string>
+    <string name="pref_privacy_summaryoff">Popup will show all message details</string>
+    <string name="pref_privacy_sender_title">Hide Contact Name</string>
+    <string name="pref_privacy_sender_summaryon">Message sender name will also be hidden</string>
+    <string name="pref_privacy_sender_summaryoff">Message sender name will be shown</string>
+    <string name="pref_privacy_always_title">Always Use Privacy Mode</string>
+    <string name="pref_privacy_always_summaryon">Privacy mode will always be used</string>
+    <string name="pref_privacy_always_summaryoff">Only use privacy mode when screen is locked</string>
+    <string name="pref_markread_title">Mark Read</string>
+    <string name="pref_markread_summaryon">Messages will be marked as read when clicking \"Close\"</string>
+    <string name="pref_markread_summaryoff">Messages will not be marked as read when clicking \"Close\"</string>
+    <string name="pref_onlyShowOnKeyguard_title">Restrict Popup</string>
+    <string name="pref_onlyShowOnKeyguard_summaryon">Popup window will only show when keyguard is engaged</string>
+    <string name="pref_onlyShowOnKeyguard_summaryoff">Popup will always show</string>
+    <string name="pref_useUnlockButton_title">Show Unlock Button</string>
+    <string name="pref_useUnlockButton_summaryon">Unlock button will show when screen is locked</string>
+    <string name="pref_useUnlockButton_summaryoff">Regular buttons will show when screen is locked</string>
+    <string name="pref_show_buttons_title">Show Buttons On Popup</string>
+    <string name="pref_show_buttons_summaryon">Buttons on popup are visible</string>
+    <string name="pref_show_buttons_summaryoff">Buttons are hidden in long press menu</string-->
+
+    <!-- Notification Preferences -->
+    <!--string name="pref_notif_title">Notifications</string>
+    <string name="pref_notif_summary">Notification configuration</string-->
+
+    <!-- Category headings -->
+    <!--string name="pref_notif_category_title">Notification Configuration</string>
+    <string name="pref_vibrate_category_title">Vibrate Configuration</string>
+    <string name="pref_flashled_category_title">LED Configuration</string>
+    <string name="pref_reminder_category_title">Reminder Configuration</string-->
+
+    <!-- General Notification Preferences -->
+
+    <!-- Vibrate Preferences -->
+    <!--string name="pref_vibrate_pattern_title">Vibrate Pattern</string>
+    <string name="pref_vibrate_pattern_summary">Set the vibration pattern</string>
+    <string name="pref_vibrate_pattern_ok">Custom vibrate pattern set</string>
+    <string name="pref_vibrate_pattern_bad">Custom vibrate pattern invalid</string>
+    <string name="pref_vibrate_pattern_help">Enter a custom vibrate pattern, in the format:\nmillisOff, millisOn, etc.\n\nFor example:\n0,1000\n0,500,200,500,200,500</string-->
+
+    <!-- LED Preferences -->
+    <!--string name="pref_flashled_title">Blink LED</string>
+    <string name="pref_flashled_summaryon">Blink LED when a message is received</string>
+    <string name="pref_flashled_summaryoff">Do not blink LED when a message is received</string>
+    <string name="pref_flashled_color_title">LED Color</string>
+    <string name="pref_flashled_color_summary">The color of the LED</string>
+    <string name="pref_flashled_color_custom_dialog_red">Red:</string>
+    <string name="pref_flashled_color_custom_dialog_green">Green:</string>
+    <string name="pref_flashled_color_custom_dialog_blue">Blue:</string>
+    <string name="pref_flashled_color_custom_dialog_preview">Preview:</string>
+    <string name="pref_flashled_color_custom_set">Custom LED color set</string>
+    <string name="pref_flashled_pattern_title">LED Blink Rate</string>
+    <string name="pref_flashled_pattern_summary">Set the speed the LED blinks</string>
+    <string name="pref_flashled_pattern_ok">Custom LED blink rate set</string>
+    <string name="pref_flashled_pattern_bad">Custom LED blink rate is invalid</string>
+    <string name="pref_flashled_pattern_help">Enter the time in milliseconds to turn the LED on and off</string>
+    <string name="pref_flashled_pattern_help_on">Time on:</string>
+    <string name="pref_flashled_pattern_help_off">Time off:</string-->
+
+    <!-- Notification Repeat Preferences -->
+    <!--string name="pref_notif_repeat_title">Enable Reminders</string>
+    <string name="pref_notif_repeat_summaryon">Unread message reminders are enabled</string>
+    <string name="pref_notif_repeat_summaryoff">Unread message reminders are disabled</string>
+    <string name="pref_notif_repeat_interval_title">Reminder Interval</string>
+    <string name="pref_notif_repeat_interval_summary">The time period between notification reminders</string>
+    <string name="pref_notif_repeat_interval_dialogTitle">Interval (minutes)</string>
+    <string name="pref_notif_repeat_times_title">Number of Reminders</string>
+    <string name="pref_notif_repeat_times_summary">The number of reminder notifications to play</string>
+    <string name="pref_notif_repeat_screen_on_title">Screen On for Reminders</string>
+    <string name="pref_notif_repeat_screen_on_summaryon">Reminders will turn screen on again</string>
+    <string name="pref_notif_repeat_screen_on_summaryoff">Reminders will not turn screen on</string-->
+
+    <!-- Contact Notification Customization Strings -->
+    <!--string name="pref_notif_default_title">Default Notifications</string>
+    <string name="pref_notif_default_summary">Notifications for all contacts without an individual customization</string>
+    <string name="pref_contacts_title">ContactsBaseActivity Notifications</string>
+    <string name="pref_contacts_summary">Individual contact customization</string>
+    <string name="pref_notif_help_title">Help - I\'m confused!</string>
+    <string name="pref_notif_help_summary">Notifications Help</string>
+    <string name="pref_notif_help_message">SMS Popup offers the ability to customize notifications on a per contact basis.  When a new message comes in, SMS Popup will first check if the contact has a customized notification.  If so, those settings are used, otherwise the default notifications are used.\n\nUsing this functionality, you could set things up so only a few contacts show a popup while the rest trigger a regular notification.  You could also ignore certain contacts by setting their notification to silent.</string-->
+
+    <!-- Preset Quick Reply Message Strings -->
+
+    <!-- Quick Reply Strings -->
+
+    <!-- Text-To-Speech and Voice Transcription Strings -->
+    <string name="error_message">Error</string>
+
+    <!-- Popup Button Configuration -->
+
+    <!-- Donate Strings (not used right now) -->
+
+    <!-- Misc missing string -->
+
+    <!-- Quick Reply Checkbox Preference -->
+
+    <!-- Misc missing string -->
+
+    <!-- Quick Reply Signature pref -->
+
+    <!-- Eula Strings -->
+
+    <!-- Send message prefs -->
+
+    <!-- Other new prefs -->
+    <!--string name="pref_autorotate_title">Autorotate Always On</string>
+    <string name="pref_autorotate_summaryon">Popup will always autorotate</string>
+    <string name="pref_autorotate_summaryoff">Popup will auto-rotate based on the screen behind it</string>
+    <string name="pref_screen_on_title">Screen On for Popup</string>
+    <string name="pref_screen_on_summaryon">Screen will turn on when popup shows</string>
+    <string name="pref_screen_on_summaryoff">Screen will not turn on when popup shows</string>
+    <string name="pref_screen_category">Screen Control</string-->
+
+    <!-- Other new Quick Reply prefs -->
+
+    <!-- Arrays texts -->
+    <!--string name="pref_custom">Custom</string>
+    <string name="pref_notif_repeat_times_entries_keep_repeting">Keep repeating</string>
+    <string name="pref_timeout_entries_10s">10 seconds</string>
+    <string name="pref_timeout_entries_20s">20 seconds</string>
+    <string name="pref_timeout_entries_30s">30 seconds</string>
+    <string name="pref_timeout_entries_1m">1 minute</string>
+    <string name="pref_timeout_entries_2m">2 minutes</string>
+    <string name="pref_timeout_entries_5m">5 minutes</string>
+    <string name="pref_timeout_entries_10m">10 minutes</string>
+    <string name="pref_vibrate_pattern_entries_normal">Normal</string>
+    <string name="pref_vibrate_pattern_entries_long">Long Vibrate</string>
+    <string name="pref_vibrate_pattern_entries_multiple_short">Multiple Short</string>
+    <string name="pref_vibrate_pattern_entries_multiple_long">Multiple Long</string>
+    <string name="pref_led_color_blue">Blue</string>
+    <string name="pref_led_color_green">Green</string>
+    <string name="pref_led_color_red">Red</string>
+    <string name="pref_led_color_yellow">Yellow</string>
+    <string name="pref_led_color_magenta">Magenta</string>
+    <string name="pref_led_color_cyan">Cyan</string>
+    <string name="pref_led_pattern_entries_fast">Fast</string>
+    <string name="pref_led_pattern_entries_normal">Normal</string>
+    <string name="pref_led_pattern_entries_slow">Slow</string-->
+
+
+    <string name="open_camera">Open Camera</string>
+    <string name="cancel">Cancel</string>
+    <string name="image_mode">Image Mode</string>
+    <string name="finish">Finish</string>
+    <string name="country_title">Country</string>
+    <string name="language_title">Language</string>
+    <string name="manage_sms">Manage Sms</string>
+    <string name="manage_location">Manage Location</string>
+    <string name="media">Media</string>
+    <string name="privacy_policy">Privacy Policies</string>
+    <string name="terms_conditions">Terms/Conditions</string>
+    <string name="user_authentication">User Authentication</string>
+    <string name="manage_account">Manage Account</string>
+    <string name="user_info">User Info</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="security_contacts">Security Contacts</string>
+    <string name="self_alert">Self Alert</string>
+    <string name="nearby_alert">Nearby Alert</string>
+    <string name="fire_alert">Fire Alert</string>
+    <string name="profile_info">Profile Info</string>
+    <string name="log_out">Log Out</string>
+    <string name="delete_account">Delete Account</string>
+    <string name="configure_app_preferences">Configure app preferences</string>
+    <string name="sms_preference">SMS Preferences</string>
+    <string name="enable_sms_popup_summary">Enable popup when an SMS is received</string>
+    <string name="enable_sms_popup">Enable SMS popup</string>
+    <string name="set_security">Set security</string>
+    <string name="set_security_summary">Enable security to lock app on startup</string>
+    <string name="change_language">Change Language</string>
+    <string name="change_language_summary">Select your preferred language for the app.</string>
+    <string name="sms_message">SMS message</string>
+    <string name="sms_message_summary">Set SMS message</string>
+    <string name="change_sms_message_to_send_out">Change SMS message to send out</string>
+    <string name="location_preference">Location Preferences</string>
+    <string name="current_location_sharing">Current location sharing</string>
+    <string name="current_location_sharing_summary">Disable sharing current location in SMS</string>
+    <string name="custom_location">Custom location</string>
+    <string name="custom_location_summary">Save location to share if current location is unavailable</string>
+    <string name="security_tips" tools:ignore="TypographyEllipsis">Security tips...</string>
+    <string name="delete">Delete </string>
+    <string name="user_profile_info">User Profile Info</string>
+    <string name="user_account_deleted">User account deleted.</string>
+    <string name="email_sent">Email sent.</string>
+    <string name="welcome_to_quick_response">Welcome to Quick Response</string>
+    <string name="sign_in_to_continue">Sign In to continue</string>
+    <string name="sign_up_for_an_account">SIGN UP FOR AN ACCOUNT?</string>
+    <string name="sign_up_to_continue">Sign Up to continue</string>
+    <string name="sign_up">SIGN UP</string>
+    <string name="already_have_an_account_sign_in">ALREADY HAVE AN ACCOUNT? SIGN IN</string>
+    <string name="no_internet">No internet !</string>
+    <string name="connect_to_internet_to_get_latest_location_updates">Connect to internet to get latest location updates</string>
+    <string name="app_privacy_policy">App\'s Privacy Policy</string>
+    <string name="app_term_condition"><![CDATA[App\'s Terms & Conditions]]></string>
+    <string name="okay">Okay</string>
+    <string name="accept">Accept</string>
+    <string name="lang_default" translatable="false">Default</string>
+    <string name="lang_chinese">Chinese</string>
+    <string name="lang_english">English</string>
+    <string name="lang_french">French</string>
+    <string name="lang_italian">Italian</string>
+    <string name="lang_spanish">Spanish</string>
+    <string name="verify_email_to_continue">Verify Email to continue</string>
+    <string name="open_email">Open Email</string>
+    <string name="open_email_for_verification_link">Open Email For Verification Link</string>
+    <string name="fill_form_completely">Please, Fill Form Completely !</string>
+    <string name="details_not_saved_check_values">Details not saved checked entered values !</string>
+    <string name="verification_email_sent_to">"Verification email sent to "</string>
+    <string name="media_files_are_stored_under">Media files are saved under:\n%s</string>
+    <string name="media_files">Media Files</string>
+    <string name="unnamed">Unnamed</string>
+
+
+    <!--Billing-->
+    <!--Common-->
+    <string name="err_no_internet">Please check your internet connection!</string>
+
+    <!--Home-->
+    <string name="fruit_store_img">Fruit Store Image</string>
+    <string name="buy_from_store">Buy From Store</string>
+    <string name="view_your_purchases">View Your Purchases</string>
+
+    <!--Billing Dialog-->
+    <string name="subscribe">Subscribe</string>
+    <string name="billing_premium_desc">The features includes \"Buying from store\" and it
+        requires special one-time subscription. Please
+        subscribe to enjoy these features for a lifetime.</string>
+    <string name="price">$0</string>
+    <string name="buy">Buy</string>
+
+    <!--InApp Billing-->
+    <string name="err_subscription_not_supported">Subscriptions are not supported with your
+        device!</string>
+    <string name="err_service_disconnected">Play Store service is not currently available! Please
+        check back later!</string>
+    <string name="err_no_sku">We did not find any SKUs to display&#8230; Check your internet
+        connection and make sure your Google Developer Console was setup correctly.</string>
+
+    <!--Store/View Purchased-->
+    <string name="one_apple">One Apple</string>
+    <plurals name="apples">
+        <item quantity="zero">Apple</item>
+        <item quantity="one">Apple</item>
+        <item quantity="many">Apples</item>
+        <item quantity="other">Apples</item>
+    </plurals>
+    <plurals name="qty">
+        <item quantity="zero">Qty: %d item purchased</item>
+        <item quantity="one">Qty: %d item purchased</item>
+        <item quantity="many">Qty: %d items purchased</item>
+        <item quantity="other">Qty: %d items purchased</item>
+    </plurals>
+    <string name="unlimited_popcorn">Unlimited Popcorn for a month</string>
+    <string name="purchased_with_expiry">Purchased, Expires at %s</string>
+    <string name="not_purchased_yet">Not Purchased Yet</string>
+    <string name="purchased">Purchased</string>
+    <string name="purchase_expired">Purchase Expired at %s</string>
+    <!--Billing-->
+
+
+    <string name="msg_token_fmt" translatable="false">InstanceID Token: %s</string>
+
+    <string name="default_notification_channel_id" translatable="false">fcm_default_channel</string>
+    <string name="default_notification_channel_name" translatable="true">Weather</string>
+    <!-- [END fcm_default_icon_string] -->
+    <string name="hint_fname">First name</string>
+    <string name="hint_lname">Last name</string>
+
+
+
+
+    <string name="admob_app_id" translatable="false">ca-app-pub-4788166230960873~7630091045</string>
+
+
+    <string name="camera_button_text">Upload</string>
+    <string name="sign_in_prompt">Sign In to begin</string>
+    <string name="take_photo_prompt">Upload a Photo</string>
+    <string name="download">Download</string>
+    <string name="sign_in_anonymously">Sign In</string>
+    <string name="label_link">Link to Uploaded File</string>
+    <string name="label_download">Download File</string>
+
+    <string name="success">Success</string>
+
+    <string name="progress_downloading">Downloading…</string>
+    <string name="progress_uploading">Uploading…</string>
+    <string name="progress_auth">Signing In…</string>
+
+    <string name="upload_success">Upload finished</string>
+    <string name="upload_failure">Upload failed</string>\
+
+    <string name="download_success">Download finished</string>
+    <string name="download_failure">Download failure</string>
+    <string name="travel_alert">Travel Alert</string>
+
+
+    <string name="error_cannot_write">Cannot write image captured by camera.</string>
+    <string name="error_cannot_open">Cannot open camera.</string>
+    <string name="error_cannot_get_permission">Camera permission not available.</string>
+    <string name="error_not_having_camera">Your device does not have front camera.</string>
+
+
+    <string name="error_occurred">An error occurred. We\'re deeply sorry.</string>
+    <string name="error_details">Error details:</string>
+    <string name="unknown_exception">Unknown exception</string>
+    <string name="restart_app">Restart app</string>
+    <string name="close_app">Close app</string>
+    <string name="copy_to_clipboard">Copy to clipboard</string>
+    <string name="snooze">Snooze</string>
+
+
+    <string name="appirator_app_title">Your App Name</string>
+    <string name="appirator_market_url">market://details?id=%s</string>
+    <integer name="appirator_days_until_prompt">30</integer>
+    <integer name="appirator_launches_until_prompt">15</integer>
+    <integer name="appirator_events_until_prompt">15</integer>
+    <!-- Set this to 0 to remind every launch -->
+    <integer name="appirator_days_before_reminding">3</integer>
+    <!-- Change to true to show every time, for testing -->
+    <bool name="appirator_test_mode">false</bool>
+    <!-- Change modify button colors -->
+    <color name="appirator_button_start_color">#ff449def</color>
+    <color name="appirator_button_end_color">#ff2f6699</color>
+    <color name="appirator_button_text_color">#ffffffff</color>
+
+    <!-- Love App Dialog -->
+
+    <string name="rate_title">Rate %s</string>
+    <string name="rate_message">If you enjoy using %s, would you mind taking a moment to rate it? Thanks for your support!</string>
+    <string name="rate">Yes, Rate %s</string>
+    <string name="rate_later">Remind me later</string>
+    <string name="rate_cancel">No, Thanks</string>
+    <string name="manage_payments">Manage Payments</string>
+    <string name="product_purchase">Product Purchase</string>
+    <string name="hide">HIDE</string>
+    <string name="hint_phone">Phone</string>
+
+
+</resources>

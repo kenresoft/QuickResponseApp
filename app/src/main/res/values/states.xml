@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="states_nga">
+        <item>Abia (Umuahia)</item>
+        <item>Adamawa (Yola)</item>
+        <item>Akwa Ibom	(Uyo)</item>
+        <item>Anambra (Awka)</item>
+        <item>Bauchi (Bauchi)</item>
+        <item>Bayelsa (Yenagoa)</item>
+        <item>Benue (Makurdi)</item>
+        <item>Bornu (Maiduguri)</item>
+        <item>Cross River (Calabar)</item>
+        <item>Delta (Asaba)</item>
+        <item>Ebonyi (Abakaliki)</item>
+        <item>Edo (Benin City)</item>
+        <item>Ekiti (Ado Ekiti)</item>
+        <item>Enugu	(Enugu)</item>
+        <item>Federal Capital Territory (Abuja)</item>
+        <item>Gombe	(Gombe)</item>
+        <item>Imo (Owerri)</item>
+        <item>Jigawa (Dutse)</item>
+        <item>Kaduna (Kaduna)</item>
+        <item>Kano (Kano)</item>
+        <item>Katsina (Katsina)</item>
+        <item>Kebbi (Birnin Kebbi)</item>
+        <item>Kogi (Lokoja)</item>
+        <item>Kwara	(Ilorin)</item>
+        <item>Lagos (Ikeja)</item>
+        <item>Nasarawa (Lafia)</item>
+        <item>Niger (Minna)</item>
+        <item>Ogun (Abeokuta)</item>
+        <item>Ondo (Akure)</item>
+        <item>Osun (Oshogbo)</item>
+        <item>Oyo (Ibadan)</item>
+        <item>Plateau (Jos)</item>
+        <item>Rivers (Port Harcourt)</item>
+        <item>Sokoto (Sokoto)</item>
+        <item>Taraba (Jalingo)</item>
+        <item>Yobe (Damaturu)</item>
+        <item>Zamfara (Gusau)</item>
+    </string-array>
+
+
+</resources>

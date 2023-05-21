@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".ui.RegisterAccount">
+
+    <RelativeLayout
+        android:id="@+id/parent"
+        style="@style/parent"
+        android:layout_marginBottom="@dimen/spacing_mxlarge"
+        android:descendantFocusability="beforeDescendants"
+        android:focusable="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:id="@+id/v1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                style="@style/parent"
+                android:background="@drawable/login_shape_bk"
+                android:orientation="vertical">
+
+                <ImageView
+                    style="@style/parent"
+                    android:background="@drawable/ic_background"
+                    android:contentDescription="login background" />
+
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="@dimen/spacing_middle" />
+
+                <com.kixfobby.security.quickresponse.widget.CircleImageView
+                    android:id="@+id/mImageView"
+                    android:layout_width="80.0dip"
+                    android:layout_height="80.0dip"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/spacing_mlarge"
+                    android:padding="5dp"
+                    app:civ_border_color="@color/colorPrimaryLight"
+                    app:civ_border_overlay="true"
+                    app:civ_border_width="1dp"
+                    app:civ_circle_background_color="@color/cardview_shadow_start_color"
+                    app:srcCompat="@drawable/user" />
+
+                <View
+                    android:layout_width="0.0dip"
+                    android:layout_height="@dimen/spacing_large" />
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/mImageView"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/spacing_medium"
+                    android:fontFamily="@font/nexa_light"
+                    android:text="@string/welcome_to_quick_response"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Large"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="25sp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <com.google.android.material.card.MaterialCardView
+            android:id="@+id/v2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/v1"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/spacing_large"
+            android:layout_marginTop="-50dp"
+            android:layout_marginRight="@dimen/spacing_large"
+            android:visibility="visible"
+            app:cardBackgroundColor="@color/grey_20"
+            app:cardCornerRadius="30dp"
+            app:elevation="7dp"
+            app:strokeColor="@color/colorPrimary"
+            app:strokeWidth="1dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginBottom="@dimen/spacing_xlarge"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/spacing_large"
+                android:paddingTop="70dp"
+                android:paddingRight="@dimen/spacing_large">
+
+                <com.google.android.material.textview.MaterialTextView
+                    android:id="@+id/tvv"
+                    style="@style/Widget.MaterialComponents.TextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="@dimen/spacing_large"
+                    android:fontFamily="@font/nexa_light"
+                    android:text="@string/sign_in_to_continue"
+                    android:textAppearance="@style/Base.TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:textSize="20sp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_email"
+                    style="@style/Material.OutlinedBox.TextInputLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/tvv"
+                    android:layout_marginTop="@dimen/spacing_xlarge"
+                    app:boxBackgroundColor="@color/colorBackground"
+                    app:boxCornerRadiusBottomEnd="15dp"
+                    app:boxCornerRadiusTopStart="15dp"
+                    app:boxStrokeColor="@color/colorPrimary"
+                    app:placeholderText="abc@gmail.com"
+                    app:startIconDrawable="@drawable/ic_baseline_email_24">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/spacing_mlarge"
+                        android:fontFamily="sans-serif-condensed"
+                        android:hint="@string/hint_email"
+                        android:importantForAutofill="yes"
+                        android:inputType="textEmailAddress"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/spacing_large"
+                        android:paddingEnd="@dimen/spacing_large"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/layout_password"
+                    style="@style/Material.OutlinedBox.TextInputLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/layout_email"
+                    android:layout_marginTop="@dimen/spacing_mlarge"
+                    app:boxBackgroundColor="@color/colorBackground"
+                    app:boxCornerRadiusBottomEnd="15dp"
+                    app:boxCornerRadiusTopStart="15dp"
+                    app:boxStrokeColor="@color/colorPrimary"
+                    app:counterEnabled="true"
+                    app:counterMaxLength="10"
+                    app:passwordToggleEnabled="true"
+                    app:placeholderText="********"
+                    app:startIconDrawable="@drawable/ic_baseline_vpn_key_24">
+
+                    <com.google.android.material.textfield.TextInputEditText
+                        android:id="@+id/edt_password"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="sans-serif-condensed"
+                        android:hint="@string/hint_password"
+                        android:importantForAutofill="yes"
+                        android:inputType="textPassword"
+                        android:maxLines="1"
+                        android:paddingStart="@dimen/spacing_large"
+                        android:paddingEnd="@dimen/spacing_large"
+                        android:textColor="@color/black" />
+
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.button.MaterialButton
+                    android:id="@+id/email_sign_in_button"
+                    android:layout_width="fill_parent"
+                    android:layout_height="55.0dip"
+                    android:layout_below="@+id/layout_password"
+                    android:layout_marginLeft="10.0dip"
+                    android:layout_marginTop="35dp"
+                    android:layout_marginRight="10.0dip"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="@string/sign_in"
+                    android:textAllCaps="false"
+                    android:textColor="@android:color/white"
+                    android:textStyle="bold"
+                    app:cornerRadius="25dp"
+                    app:elevation="10dp"
+                    app:icon="@drawable/ic_account_circle"
+                    app:iconGravity="textEnd"
+                    app:rippleColor="@color/colorPrimaryDark"
+                    app:strokeColor="@color/white"
+                    app:strokeWidth="1dp" />
+
+                <LinearLayout
+                    android:id="@+id/sign_in_for_account"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/email_sign_in_button"
+                    android:layout_marginTop="@dimen/spacing_xxlarge"
+                    android:gravity="center"
+                    android:orientation="horizontal">
+
+                    <com.google.android.material.textview.MaterialTextView
+                        android:id="@+id/tvSignUp"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/nexa_light"
+                        android:text="@string/sign_up_for_an_account"
+                        android:clickable="true"
+                        android:textAppearance="@style/Base.TextAppearance.AppCompat.Caption"
+                        android:textColor="@color/colorPrimary" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </com.google.android.material.card.MaterialCardView>
+
+
+        <View
+            android:layout_width="0.0dip"
+            android:layout_height="@dimen/spacing_xlarge" />
+
+    </RelativeLayout>
+
+</androidx.core.widget.NestedScrollView>

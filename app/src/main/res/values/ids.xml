@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="other_name" type="id" />
+    <item name="other_date" type="id" />
+    <item name="others_message" type="id" />
+    <item name="chat_list" type="id" />
+    <item name="button_send_message" type="id" />
+    <item name="button_send_not_able" type="id" />
+    <item name="message_chat" type="id" />
+    <item name="chat_list_progress" type="id" />
+    <item name="progress_text" type="id" />
+    <item name="no_messages" type="id" />
+    <item name="sad_icon" type="id" />
+    <item name="button_enter_chat" type="id" />
+    <item name="inputNick" type="id" />
+    <item name="profilePicture" type="id" />
+    <item name="activity_chat_room" type="id" />
+    <item name="chat_item_list" type="id" />
+    <item name="ic_fallback_user" type="id" />
+    <item name="activity_start" type="id" />
+</resources>

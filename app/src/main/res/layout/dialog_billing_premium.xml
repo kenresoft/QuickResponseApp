@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".home.BillingPremiumDialog">
+
+    <data>
+
+        <variable
+            name="presenter"
+            type="com.kixfobby.security.quickresponse.home.BillingPremiumVM" />
+    </data>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="295dp"
+            android:layout_below="@+id/iv_fruit_store"
+            android:layout_marginTop="-80dp"
+            android:background="@drawable/wallpaper"
+            android:padding="16dp">
+
+            <TextView
+                android:id="@+id/tv_subscribe"
+                style="@style/CustomStatusTextView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/parisian_normal"
+                android:text="@string/subscribe"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="21sp"
+                android:textStyle="bold" />
+
+            <View
+                android:id="@+id/v_subscribe"
+                android:layout_width="wrap_content"
+                android:layout_height="1dp"
+                android:layout_below="@id/tv_subscribe"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:background="@color/windowBackground" />
+
+            <TextView
+                android:id="@+id/tv_billing_premium_desc"
+                style="@style/ThemeOverlay.MyDarkButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/v_subscribe"
+                android:layout_marginTop="@dimen/size20"
+                android:fontFamily="sans-serif-condensed"
+                android:lineSpacingExtra="@dimen/size4"
+                android:gravity="center"
+                android:text="@string/billing_premium_desc"
+                android:textColor="@color/colorPrimary"
+                android:textSize="@dimen/text16"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_billing_price"
+                style="@style/ThemeOverlay.MyDarkButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_billing_premium_desc"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/size20"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="@string/price"
+                android:textColor="@color/colorPrimaryDark"
+                android:textSize="@dimen/text18"
+                android:textStyle="bold" />
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/btn_billing_buy"
+                style="@style/MaterialButton.OutlinedButton.IconAndText"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size40"
+                android:layout_below="@id/tv_billing_price"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/size20"
+                android:onClick="@{(view) -> presenter.onClick(view)}"
+                android:paddingStart="@dimen/size40"
+                android:paddingEnd="@dimen/size40"
+                android:text="@string/buy"
+                android:textColor="@color/white"
+                android:textStyle="bold"
+                app:backgroundTint="@color/colorPrimary"
+                app:cornerRadius="25dp"
+                app:elevation="10dp"
+                app:iconTint="@color/white"
+                app:rippleColor="@color/colorPrimaryDark"
+                app:strokeColor="@color/white"
+                app:strokeWidth="1dp" />
+
+            <!--<View
+                android:id="@+id/v_billing_price"
+                android:layout_width="wrap_content"
+                android:layout_height="@dimen/size2"
+                android:layout_below="@id/btn_billing_buy"
+                android:layout_alignStart="@+id/btn_billing_buy"
+                android:layout_alignLeft="@+id/btn_billing_buy"
+                android:layout_alignEnd="@+id/btn_billing_buy"
+                android:layout_alignRight="@+id/btn_billing_buy"
+                android:layout_marginStart="@dimen/size20"
+                android:layout_marginTop="@dimen/size20"
+                android:layout_marginEnd="@dimen/size20"
+                android:layout_marginBottom="@dimen/size10"
+                android:background="@color/colorPrimary" />-->
+
+        </RelativeLayout>
+
+        <ImageView
+            android:id="@+id/iv_fruit_store"
+            android:layout_width="@dimen/contact_thumbnail_size"
+            android:layout_height="@dimen/size64"
+            android:layout_alignParentEnd="true"
+            android:layout_marginStart="@dimen/size24"
+            android:layout_marginEnd="8dp"
+            android:contentDescription="@string/background_image"
+            android:padding="@dimen/size10"
+            app:srcCompat="@drawable/baseline_payment_24"
+            app:tint="@color/windowBackground" />
+
+    </RelativeLayout>
+
+</layout>

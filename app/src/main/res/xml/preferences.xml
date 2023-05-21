@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?><!--suppress ALL -->
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <PreferenceCategory android:title="@string/configure_app_preferences">
+        <SwitchPreference
+            android:icon="@drawable/baseline_security_24"
+            android:key="security"
+            android:summary="@string/set_security_summary"
+            android:title="@string/set_security"
+            app:switchTextOff="Disabled"
+            app:switchTextOn="Enabled" />
+
+        <ListPreference
+            android:defaultValue="en"
+            android:entries="@array/pref_language_list_titles"
+            android:entryValues="@array/pref_language_list_values"
+            android:icon="@drawable/ic_book"
+            android:key="language"
+            android:negativeButtonText="@null"
+            android:positiveButtonText="@null"
+            android:summary="@string/change_language_summary"
+            android:title="@string/change_language" />
+
+        <!--CheckBoxPreference
+            android:defaultValue="@bool/pref_popup_enabled_default"
+            android:key="@string/pref_popup_enabled_key"
+            android:summaryOff="@string/pref_popup_enabled_summaryoff"
+            android:summaryOn="@string/pref_popup_enabled_summaryon"
+            android:title="@string/pref_popup_enabled_title" />
+        <com.kixfobby.security.quickresponse.preferences.DialogCheckBoxPreference
+            android:defaultValue="@bool/pref_notif_enabled_default"
+            android:key="@string/pref_notif_enabled_key"
+            android:summaryOff="@string/pref_notif_enabled_summaryoff"
+            android:summaryOn="@string/pref_notif_enabled_summaryon"
+            android:title="@string/pref_notif_enabled_title" />
+        <CheckBoxPreference
+            android:defaultValue="@bool/pref_notifyOnCall_default"
+            android:dependency="@string/pref_notif_enabled_key"
+            android:key="@string/pref_notifyOnCall_key"
+            android:summaryOff="@string/pref_notifyOnCall_summaryoff"
+            android:summaryOn="@string/pref_notifyOnCall_summaryon"
+            android:title="@string/pref_notifyOnCall_title" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_vibrate_category_title">
+        <CheckBoxPreference
+            android:defaultValue="@bool/pref_vibrate_default"
+            android:dependency="@string/pref_notif_enabled_key"
+            android:key="@string/pref_vibrate_key"
+            android:summaryOff="@string/pref_vibrate_summaryoff"
+            android:summaryOn="@string/pref_vibrate_summaryon"
+            android:title="@string/pref_vibrate_title" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_flashled_category_title">
+        <CheckBoxPreference
+            android:defaultValue="@bool/pref_flashled_default"
+            android:dependency="@string/pref_notif_enabled_key"
+            android:key="@string/pref_flashled_key"
+            android:summaryOff="@string/pref_flashled_summaryoff"
+            android:summaryOn="@string/pref_flashled_summaryon"
+            android:title="@string/pref_flashled_title" />
+    </PreferenceCategory>
+    <PreferenceCategory android:title="@string/pref_reminder_category_title">
+        <CheckBoxPreference
+            android:defaultValue="@bool/pref_notif_repeat_default"
+            android:key="@string/pref_notif_repeat_key"
+            android:summaryOff="@string/pref_notif_repeat_summaryoff"
+            android:summaryOn="@string/pref_notif_repeat_summaryon"
+            android:title="@string/pref_notif_repeat_title" />
+        <ListPreference
+            android:defaultValue="@string/pref_notif_repeat_times_default"
+            android:dependency="@string/pref_notif_repeat_key"
+            android:entries="@array/pref_notif_repeat_times_entries"
+            android:entryValues="@array/pref_notif_repeat_times_values"
+            android:key="@string/pref_notif_repeat_times_key"
+            android:summary="@string/pref_notif_repeat_times_summary"
+            android:title="@string/pref_notif_repeat_times_title" />
+        <ListPreference
+            android:defaultValue="@string/pref_notif_repeat_interval_default"
+            android:dependency="@string/pref_notif_repeat_key"
+            android:dialogTitle="@string/pref_notif_repeat_interval_dialogTitle"
+            android:entries="@array/pref_notif_repeat_interval_entries"
+            android:entryValues="@array/pref_notif_repeat_interval_entries"
+            android:key="@string/pref_notif_repeat_interval_key"
+            android:summary="@string/pref_notif_repeat_interval_summary"
+            android:title="@string/pref_notif_repeat_interval_title" /-->
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/sms_preference">
+        <EditTextPreference
+            android:icon="@drawable/baseline_sms_24"
+            android:key="sms_message"
+            android:summary="@string/change_sms_message_to_send_out"
+            android:title="@string/sms_message_summary"
+            app:dialogTitle="@string/sms_message" />
+
+        <SwitchPreference
+            android:icon="@drawable/baseline_sms_failed_24"
+            android:key="sms_popup"
+            android:summary="@string/enable_sms_popup_summary"
+            android:title="@string/enable_sms_popup"
+            app:switchTextOff="Disabled"
+            app:switchTextOn="Enabled" />
+
+        <!--PreferenceScreen
+        android:icon="@drawable/stat_notify_sms_blur_green"
+        android:key="@string/contacts_key"
+        android:summary="@string/pref_contacts_summary"
+        android:title="@string/pref_contacts_title" /-->
+
+        <!--<PreferenceScreen
+            android:icon="@drawable/baseline_sms_24"
+            android:key="@string/quickmessages_key"
+            android:summary="@string/pref_message_presets_summary"
+            android:title="@string/pref_message_presets_title"></PreferenceScreen>-->
+    </PreferenceCategory>
+
+    <PreferenceCategory android:title="@string/location_preference">
+        <SwitchPreference
+            android:icon="@drawable/baseline_location_off_24"
+            android:key="current_location"
+            android:summary="@string/current_location_sharing_summary"
+            android:title="@string/current_location_sharing"
+            app:defaultValue="false"
+            app:switchTextOff="Disabled"
+            app:switchTextOn="Enabled" />
+
+        <EditTextPreference
+            android:icon="@drawable/baseline_location_on_24"
+            android:key="custom_location"
+            android:summary="@string/custom_location_summary"
+            android:title="@string/custom_location"
+            app:dependency="current_location"
+            app:dialogTitle="Custom location" />
+    </PreferenceCategory>
+
+    <!--<PreferenceCategory android:title="About">
+        <PreferenceScreen
+            android:icon="@drawable/baseline_perm_contact_calendar_24"
+            android:key="about"
+            android:summary="@string/pref_about_key"
+            android:title="About app and developer" />
+    </PreferenceCategory>-->
+
+</PreferenceScreen>

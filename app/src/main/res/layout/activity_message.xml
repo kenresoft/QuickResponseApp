@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/coordinator_main"
+    android:background="@color/darkBackground"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="58dp" />
+
+    <com.kixfobby.security.spacetablayout.SpaceTabLayout
+        android:id="@+id/spaceTabLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:button_color="@color/colorControlNormal"
+        app:text_one="@string/sms_message"
+        app:text_two="Chat message"
+        app:number_of_tabs="two"
+        app:starting_position="one"
+        app:layout_behavior="com.kixfobby.security.spacetablayout.SpaceTabLayoutBehavior"/>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="pref_language_list_titles" translatable="false">
+        <item>@string/lang_default</item>
+        <item>@string/lang_chinese</item>
+        <item>@string/lang_english</item>
+        <item>@string/lang_french</item>
+        <item>@string/lang_italian</item>
+        <item>@string/lang_spanish</item>
+    </string-array>
+    <string-array name="pref_language_list_values" translatable="false">
+        <item>en</item>
+        <item>zh</item>
+        <item>en</item>
+        <item>fr</item>
+        <item>it</item>
+        <item>es</item>
+    </string-array>
+</resources>

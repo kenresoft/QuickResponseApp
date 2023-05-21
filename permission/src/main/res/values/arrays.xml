@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="permissionNames">
+        <item>@string/permission_storage</item>
+        <item>@string/permission_location</item>
+        <item>@string/permission_camera</item>
+        <item>@string/permission_sms</item>
+        <item>@string/permission_phone</item>
+        <item>@string/permission_contact</item>
+        <item>@string/permission_audio</item>
+
+    </array>
+</resources>

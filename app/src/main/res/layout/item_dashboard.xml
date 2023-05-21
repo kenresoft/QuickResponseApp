@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="123dp"
+    app:strokeColor="@color/colorPrimary"
+    app:strokeWidth="1dp"
+    app:cardBackgroundColor="@color/grey_10"
+    app:cardCornerRadius="10.0dip"
+    app:cardElevation="5.0dip">
+
+    <com.balysv.materialripple.MaterialRippleLayout
+        style="@style/RippleStyleBlack"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/lyt_parent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <!--<com.kixfobby.security.badge.ImageBadgeView
+                android:id="@+id/badge"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginBottom="8dp"
+                android:visibility="visible"
+                app:ibv_badgeColor="@color/colorPrimary"
+                app:ibv_badgeLimitValue="false"
+                app:ibv_badgeTextColor="#ffffff"
+                app:ibv_badgeTextSize="12sp"
+                app:ibv_badgeTextStyle="bold"
+                app:ibv_badgeValue="0"
+                app:ibv_fixedBadgeRadius="15dp" />-->
+            <!--#00ACC1-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginStart="@dimen/spacing_middle"
+                android:layout_marginTop="@dimen/spacing_middle"
+                android:layout_marginEnd="@dimen/spacing_middle"
+                android:layout_marginBottom="@dimen/spacing_middle"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+                <ImageView
+                    android:id="@+id/image"
+                    android:layout_width="47.0dip"
+                    android:layout_height="47.0dip"
+                    app:srcCompat="@drawable/ic_launcher_background"
+                    app:tint="@color/colorPrimary" />
+
+                <TextView
+                    android:id="@+id/title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:fontFamily="@font/nexa_light"
+                    android:gravity="center"
+                    android:text="Category Name"
+                    android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    tools:ignore="HardcodedText" />
+
+                <!--overlay_dark_40
+            #FFEE58-->
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+    </com.balysv.materialripple.MaterialRippleLayout>
+
+</com.google.android.material.card.MaterialCardView>
+
