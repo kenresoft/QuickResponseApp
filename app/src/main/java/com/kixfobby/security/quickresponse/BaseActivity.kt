@@ -20,19 +20,17 @@ import android.webkit.WebChromeClient
 import android.webkit.WebSettings.RenderPriority
 import android.webkit.WebView
 import android.webkit.WebViewClient
+import android.widget.Button
 import android.widget.FrameLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.annotation.StringRes
 import androidx.appcompat.app.AppCompatActivity
 import androidx.camera.view.CameraController
+import androidx.core.content.ContextCompat
 import androidx.core.content.FileProvider
 import com.androidhiddencamera.HiddenCameraFragment
-import com.google.android.material.button.MaterialButton
 import com.google.android.material.snackbar.Snackbar
-import com.google.firebase.auth.FirebaseUser
-import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.FirebaseFirestoreSettings
 import com.kixfobby.security.quickresponse.helper.UpdateDialog
 import com.kixfobby.security.quickresponse.service.DemoCamService
 import com.kixfobby.security.quickresponse.storage.Constants
@@ -98,7 +96,7 @@ open class BaseActivity : KixfActivity() {
     fun openVideo() {
         if (hasCamera()) {
             val file: String = "qr_alert_shot_" + System.currentTimeMillis().toString() + ".mp4"
-            val mediaFile = File(Companion.storageLocation + file)
+            val mediaFile = File(storageLocation + file)
             Pref(baseContext).put("file", file)
 
             val videoUri: Uri = FileProvider.getUriForFile(this, "$packageName.provider", mediaFile)
@@ -110,7 +108,7 @@ open class BaseActivity : KixfActivity() {
 
     fun captureBackground() {
         if (mHiddenCameraFragment != null) {    //Remove fragment from container if present
-            getSupportFragmentManager()
+            supportFragmentManager
                 .beginTransaction()
                 .remove(mHiddenCameraFragment!!)
                 .commit()
@@ -179,7 +177,7 @@ open class BaseActivity : KixfActivity() {
                 WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED
             )
             dialog?.findViewById<View>(R.id.bt_close)!!.setOnClickListener { dialog?.dismiss() }
-            (dialog?.findViewById<View>(R.id.bt_accept) as MaterialButton).text = getString(R.string.okay)
+            (dialog?.findViewById<View>(R.id.bt_accept) as Button).text = getString(R.string.okay)
             dialog?.findViewById<View>(R.id.bt_accept)?.setOnClickListener { dialog?.dismiss() }
             renderPrivacyWebPage(Constants.POLICY)
         }
@@ -227,7 +225,7 @@ open class BaseActivity : KixfActivity() {
                 WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED
             )
             dialog2?.findViewById<View>(R.id.bt_close)!!.setOnClickListener { dialog2?.dismiss() }
-            (dialog2?.findViewById<View>(R.id.bt_accept) as MaterialButton).text = getString(R.string.okay)
+            (dialog2?.findViewById<View>(R.id.bt_accept) as Button).text = getString(R.string.okay)
             dialog2?.findViewById<View>(R.id.bt_accept)?.setOnClickListener { dialog2?.dismiss() }
             renderTermsWebPage(Constants.TERM)
         }
@@ -237,8 +235,10 @@ open class BaseActivity : KixfActivity() {
         }
     }
 
+    @SuppressLint("SetJavaScriptEnabled")
     protected fun renderTermsWebPage(url: String?) {
         webview?.webViewClient = object : WebViewClient() {
+            @Deprecated("Deprecated in Java", ReplaceWith("true"))
             override fun shouldOverrideUrlLoading(view: WebView, url: String): Boolean {
                 return true
             }
@@ -302,15 +302,15 @@ open class BaseActivity : KixfActivity() {
         val snackView: View = layoutInflater.inflate(R.layout.custom_toast_layout, null)
 
         // White background
-        snackbar.getView().setBackgroundColor(Color.WHITE)
+        snackbar.view.setBackgroundColor(Color.WHITE)
         // for rounded edges
-        snackbar.getView().setBackground(resources.getDrawable(R.drawable.background))
-        val snackBarView: Snackbar.SnackbarLayout = snackbar.getView() as Snackbar.SnackbarLayout
-        val parentParams = snackBarView.getLayoutParams()
+        snackbar.view.background = ContextCompat.getDrawable(this, R.drawable.background)
+        val snackBarView: Snackbar.SnackbarLayout = snackbar.view as Snackbar.SnackbarLayout
+        val parentParams = snackBarView.layoutParams
         //parentParams.setMargins(marginFromSides, 0, marginFromSides, marginFromSides)
         parentParams.height = height.toInt()
         parentParams.width = FrameLayout.LayoutParams.MATCH_PARENT
-        snackBarView.setLayoutParams(parentParams)
+        snackBarView.layoutParams = parentParams
         snackBarView.addView(snackView, 0)
         return snackbar
     }
